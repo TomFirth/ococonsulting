@@ -7,303 +7,6 @@
     <title>Daniel O'Connor</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <style>
-        @font-face {
-          font-family: 'icomoon';
-          src:  url('fonts/icomoon.eot?9yug7q');
-          src:  url('fonts/icomoon.eot?9yug7q#iefix') format('embedded-opentype'),
-            url('fonts/icomoon.ttf?9yug7q') format('truetype'),
-            url('fonts/icomoon.woff?9yug7q') format('woff'),
-            url('fonts/icomoon.svg?9yug7q#icomoon') format('svg');
-          font-weight: normal;
-          font-style: normal;
-        }
-
-        [class^="icon-"], [class*=" icon-"] {
-          /* use !important to prevent issues with browser extensions that change fonts */
-          font-family: 'icomoon' !important;
-          font-style: normal;
-          font-weight: normal;
-          font-variant: normal;
-          text-transform: none;
-          line-height: 1;
-
-          /* Better Font Rendering =========== */
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-        }
-
-        .icon-instagram:before {
-          content: "\e905";
-        }
-        .icon-trophy:before {
-          content: "\e605";
-        }
-        .icon-office:before {
-          content: "\e606";
-        }
-        .icon-clock:before {
-          content: "\e60a";
-        }
-        .icon-reddit:before {
-          content: "\e609";
-        }
-        .icon-telegram:before {
-          content: "\e904";
-        }
-        .icon-flickr:before {
-          content: "\f16e";
-        }
-        .icon-medium:before {
-          content: "\f23a";
-        }
-        .icon-heart:before {
-          content: "\f004";
-        }
-        .icon-book:before {
-          content: "\f02d";
-        }
-        .icon-linkedin:before {
-          content: "\f08c";
-        }
-        .icon-twitter:before {
-          content: "\f099";
-        }
-        .icon-github:before {
-          content: "\f09b";
-        }
-        .icon-link:before {
-          content: "\f0c1";
-        }
-        .icon-bars:before {
-          content: "\f0c9";
-        }
-        .icon-pinterest:before {
-          content: "\f0d2";
-        }
-        .icon-googleplus:before {
-          content: "\f0d5";
-        }
-        .icon-circle:before {
-          content: "\f111";
-        }
-        .icon-code:before {
-          content: "\f121";
-        }
-        .icon-youtube:before {
-          content: "\f167";
-        }
-        .icon-stackoverflow:before {
-          content: "\f16c";
-        }
-        .icon-bitbucket:before {
-          content: "\f171";
-        }
-        .icon-tumblr:before {
-          content: "\f173";
-        }
-        .icon-dribbble:before {
-          content: "\f17d";
-        }
-        .icon-skype:before {
-          content: "\f17e";
-        }
-        .icon-foursquare:before {
-          content: "\f180";
-        }
-        .icon-gittip:before {
-          content: "\f184";
-        }
-        .icon-gratipay:before {
-          content: "\f184";
-        }
-        .icon-stackexchange:before {
-          content: "\f18d";
-        }
-        .icon-vimeo:before {
-          content: "\f194";
-        }
-        .icon-graduation-cap:before {
-          content: "\f19d";
-        }
-        .icon-language:before {
-          content: "\f1ab";
-        }
-        .icon-child:before {
-          content: "\f1ae";
-        }
-        .icon-behance:before {
-          content: "\f1b5";
-        }
-        .icon-spotify:before {
-          content: "\f1bc";
-        }
-        .icon-soundcloud:before {
-          content: "\f1be";
-        }
-        .icon-codepen:before {
-          content: "\f1cb";
-        }
-        .icon-hackernews:before {
-          content: "\f1d4";
-        }
-        .icon-lastfm:before {
-          content: "\f202";
-        }
-        .icon-angellist:before {
-          content: "\f209";
-        }
-        .icon-facebook:before {
-          content: "\f230";
-        }
-        .icon-meetup .path1:before {
-          content: "\e901";
-          color: rgb(255, 255, 255);
-        }
-        .icon-meetup .path2:before {
-          content: "\e902";
-          margin-left: -1.5em;
-          color: rgb(240, 1, 1);
-        }
-        .icon-meetup .path3:before {
-          content: "\e903";
-          margin-left: -1.5em;
-          color: rgb(3, 3, 3);
-        }
-        .icon-blogger:before {
-          content: "\e900";
-        }
-        .icon-exercism:before {
-          content: "\e601";
-        }
-        .icon-profile:before {
-          content: "\e600";
-        }
-        .icon-tools:before {
-          content: "\e034";
-        }
-        .icon-location:before {
-          content: "\e602";
-        }
-        .icon-mail:before {
-          content: "\e603";
-        }
-        .icon-phone:before {
-          content: "\e03f";
-        }
-        .icon-newspaper:before {
-          content: "\e607";
-        }
-        .icon-dots-three-horizontal:before {
-          content: "\e60b";
-        }
-        .icon-thumbs-up:before {
-          content: "\e604";
-        }
-        .icon-chevron-down:before {
-          content: "\e60c";
-        }
-        .icon-chevron-up:before {
-          content: "\e60d";
-        }
-        .icon-dots-three-horizontal:before {
-          content: "\e60b";
-        }
-        .icon-thumbs-up:before {
-          content: "\e604";
-        }
-        .icon-board:before {
-          content: "\e608";
-        }
-
-
-        .relative {
-          position: relative;
-        }
-        .clear-margin {
-          margin: 0;
-        }
-        .space-top {
-          margin-top: 10px;
-        }
-        .space-right {
-          margin-right: 10px;
-        }
-        .space-bottom {
-          margin-bottom: 10px;
-        }
-        .mr-5 {
-          margin-right: 5px;
-        }
-        .mr-10 {
-          margin-right: 10px;
-        }
-        .ml-5 {
-          margin-left: 5px;
-        }
-        .labels {
-          line-height: 2;
-        }
-        .label-keyword {
-          display: inline-block;
-          background: #7eb0db;
-          color: white;
-          font-size: 0.9em;
-          padding: 5px;
-          border: 1px solid #357ebd;
-          margin-right: 5px;
-        }
-        .label-keyword:last-child {
-          margin-right: 0;
-        }
-        .link-disguise {
-          color: inherit;
-        }
-        .link-disguise:hover {
-          color: inherit;
-        }
-        .clear-margin {
-          margin: 0;
-        }
-        @media (max-width: 992px) {
-          .clear-margin-sm {
-            margin-bottom: 0;
-          }
-        }
-        .fs-lg {
-          font-size: 1.33333333em;
-          line-height: .75em;
-          vertical-align: -15%;
-        }
-        .fs-2x {
-          font-size: 2em;
-        }
-        .fs-3x {
-          font-size: 3em;
-        }
-        .fs-4x {
-          font-size: 4em;
-        }
-        .btn-circle-sm {
-          width: 28px;
-          height: 28px;
-          line-height: 28px;
-          border-radius: 50%;
-          text-align: center;
-          padding: 0;
-          outline: none !important;
-        }
-        @font-face {
-          font-family: 'jst-elegant';
-          src: url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.eot?f218wo");
-          src: url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.eot?f218wo#iefix") format('embedded-opentype'), url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.ttf?f218wo") format('truetype'), url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.woff?f218wo") format('woff'), url("//unpkg.com/jsonresume-theme-elegant@1.10.1/assets/icomoon/fonts/icomoon.svg?f218wo#icomoon") format('svg');
-          font-weight: normal;
-          font-style: normal;
-        }
-        [class^="icon-"],
-        [class*=" icon-"] {
-          /* use !important to prevent issues with browser extensions that change fonts */
-          font-family: 'jst-elegant' !important;
-        }
         body {
           font-family: 'Lato';
           font-size: 16px;
@@ -312,6 +15,9 @@
         }
         .main {
           padding: 5px;
+        }
+        .large-text {
+          font-size: 45px;
         }
         .card {
           background: white;
@@ -974,19 +680,20 @@
 </ul>
 </nav>
 <section class="col-md-3 card-wrapper profile-card-wrapper affix">
-<div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="Jonathan Tarrant" src="./files/cvprofile.png" itemprop="image"></div><div class="name-and-profession text-center"><h1 itemprop="name"><strong>Daniel O'Connor</strong></h1><h5 class="text-muted" itemprop="jobTitle">Basically a genius.</h5></div></span>
+<div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="Jonathan Tarrant" src="./files/cvprofile.png" itemprop="image"></div><div class="name-and-profession text-center"><h1 itemprop="name"><strong>Daniel O'Connor</strong></h1>
+  <h5 class="text-muted" itemprop="jobTitle">Freelance project manager.</h5></div></span>
 <hr>
 <div class="contact-details clearfix">
 <div class="detail"><span class="icon"></span><strong>Contact details:</strong></div>
-<div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">Berkhamsted, UK</span></div>
-<div class="detail"><span class="icon"><i class="icon fs-lg icon-phone"></i></span><span class="info" itemprop="telephone">[+44] 7767 102462</span></div>
-<div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a class="link-disguise" href="mailto:oconbizops@gmail.com" itemprop="email">oconbizops@gmail.com</a></span></div>
+<div class="detail"><span class="icon"><i class="icon fs-lg fas fa-house-user"></i></span><span class="info">Berkhamsted, UK</span></div>
+<div class="detail"><span class="icon"><i class="icon fs-lg fas fa-phone"></i></span><span class="info" itemprop="telephone">[+44] 7767 102462</span></div>
+<div class="detail"><span class="icon"><i class="icon fs-lg fas fa-envelope"></i></span><span class="info"><a class="link-disguise" href="mailto:oconbizops@gmail.com" itemprop="email">oconbizops@gmail.com</a></span></div>
 </div>
 <hr>
 <div class="social-links text-center">
 <div>
-  <a class="fs-2x social-link link-twitter icon-twitter" href="https://twitter.com/" target="_blank" data-toggle="tooltip" title="" data-original-title="on Twitter"></a>
-  <a class="fs-2x social-link link-linkedin icon-linkedin" href="https://www.linkedin.com/in/" target="_blank" data-toggle="tooltip" title="" data-original-title="on LinkedIn"></a>
+  <a class="fs-2x social-link large-text link-skype fab fa-skype" href="skype:daniel.o.connor6?call" target="_blank" data-toggle="tooltip" title="" data-original-title="on Skype"></a>
+  <a class="fs-2x social-link large-text link-linkedin fab fa-linkedin" href="https://www.linkedin.com/in/daniel-oconnor-mba/" target="_blank" data-toggle="tooltip" title="Daniel O'Connor" data-original-title="on LinkedIn"></a>
 </div>
 </div>
 </div>
@@ -995,7 +702,7 @@
 <div class="card background-card" style="min-height: 1050px;">
 <div class="background-details">
 <div class="detail" id="about">
-<div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">Summary</span></div>
+<div class="icon"><i class="fs-lg fas fa-user-circle"></i><span class="mobile-title">Summary</span></div>
 <div class="info">
 <h4 class="title text-uppercase">Summary</h4>
 <div class="card card-nested">
@@ -1005,7 +712,7 @@
 </div>
 </div>
 <div class="detail" id="work-experience">
-<div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div>
+<div class="icon"><i class="fs-lg fas fa-pen"></i><span class="mobile-title">Work Experience</span></div>
 <div class="info">
 <h4 class="title text-uppercase">Work Experience</h4>
 <ul class="list-unstyled clear-margin">
@@ -1112,7 +819,7 @@
 </div>
 </div>
 <div class="detail" id="education">
-<div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div>
+<div class="icon"><i class="fs-lg fas fa-graduation-cap"></i><span class="mobile-title">Education</span></div>
 <div class="info">
 <h4 class="title text-uppercase">Education</h4>
 <div class="content">
@@ -1171,8 +878,10 @@
 </section>
 </div>
 </div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/c85c0c7375.js" crossorigin="anonymous"></script>
 <script>
 $(function () {
 var toggleFloatingMenu = function() {
